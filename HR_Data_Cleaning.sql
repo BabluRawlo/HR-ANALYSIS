@@ -30,7 +30,7 @@ UPDATE hr
 SET Date_of_Join
  = DATE_FORMAT(STR_TO_DATE(Date_of_Join, '%d-%m-%Y'), '%Y-%m-%d');
  
- --B) Updating the salary column using record using replace function.
+ --B) Updating the salary column  record using replace function.
  
  update hr
 set salary = replace (salary,'$',' ');
